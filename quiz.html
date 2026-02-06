@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<div class="config-container">
+  <h2>Quiz Settings</h2>
+  <p>Select Category</p>
+
+  <div class="category-options">
+    <div class="category-option" data-category="national">
+      <img src="./img/nq.jpg" alt="">
+      National
+    </div>
+
+    <div class="category-option" data-category="international">
+      <img src="./img/iq.jpg" alt="">
+      International quiz
+    </div>
+  </div>
+
+  <p style="margin-top:20px;">Number of Questions</p>
+
+  <div class="question-count">
+    <button data-count="1">1</button>
+    <button data-count="2">2</button>
+    <button data-count="3">3</button>
+    <button data-count="5">5</button>
+  </div>
+
+  <button class="start-quiz-btn">Start Quiz</button>
+</div>
+
+<!-- QUIZ SCREEN -->
+<div class="quiz-container">
+  <div class="quiz-header">
+    <span class="question-status"></span>
+    <span class="time-duration"></span>
+  </div>
+
+  <h3 class="question-text"></h3>
+  <ul class="answer-options"></ul>
+
+  <button class="next-question-btn">Next</button>
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>
